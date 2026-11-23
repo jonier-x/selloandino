@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sello Andino – Tu tienda de perfumes en un solo lugar</title>
+<meta name="description" content="Tienda de perfumes Sello Andino: caballero, dama, tendencias y ofertas con entrega a domicilio en Pasto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--crema:#F8EFE0;--crema2:#F0E3CC;--oro:#B8893A;--oro2:#D9BC84;--vino:#6E0F2B;--carbon:#1E1A19;--gris:#6B625C;
+--serif:"Playfair Display",Georgia,serif;--sans:"Figtree",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(circle at 0 0,#7a1230 0,#7a1230 120px,transparent 121px),radial-gradient(circle at 100% 100%,#7a1230 0,#7a1230 160px,transparent 161px),linear-gradient(#FBF3E4,#F3E6CF);color:var(--carbon);font:400 15px/1.45 var(--sans)}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--oro);outline-offset:2px}
+.top{max-width:1000px;margin:0 auto;padding:1.4rem 1rem .4rem;text-align:center}
+.top h1{font:600 clamp(2rem,5vw,3rem)/1 var(--serif);color:#5a3a12;margin:0}
+.top p{margin:.3rem 0 0;letter-spacing:.28em;font-size:.72rem;color:var(--carbon)}
+.tabs{display:flex;gap:.45rem;overflow-x:auto;padding:1rem;max-width:1000px;margin:0 auto;justify-content:center;flex-wrap:wrap}
+.tab{border:1.5px solid var(--vino);background:transparent;color:var(--vino);padding:.4rem .9rem;border-radius:99px;font-weight:600;font-size:.88rem;min-height:38px}
+.tab[aria-current="page"]{background:var(--vino);color:#fff}
+.tab.x{border-color:var(--oro);color:#6b4d16}
+.tab.x[aria-current="page"]{background:var(--oro);color:#fff}
+.stage{display:flex;justify-content:center;padding:.5rem 1rem 3rem}
+.phone{width:340px;height:700px;background:#121010;border-radius:46px;padding:10px;box-shadow:0 0 0 2px #3a3532,0 24px 50px rgba(60,20,20,.35);position:relative}
+.screen{background:#fff;border-radius:36px;height:100%;overflow:hidden;position:relative;display:flex;flex-direction:column}
+.notch{position:absolute;top:8px;left:50%;transform:translateX(-50%);width:104px;height:26px;background:#121010;border-radius:99px;z-index:30}
+.status{display:flex;justify-content:space-between;padding:12px 22px 4px;font-weight:700;font-size:.8rem;flex:none}
+.hdr{display:flex;align-items:center;gap:.4rem;padding:.35rem .8rem .5rem;flex:none}
+.hdr .t{flex:1;display:flex;align-items:center;gap:.35rem;font:600 1.05rem var(--serif);min-width:0}
+.hdr .t span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ic{background:none;border:0;padding:6px;width:34px;height:34px;display:grid;place-items:center;position:relative;color:var(--carbon)}
+.ic svg{width:21px;height:21px}
+.dot{position:absolute;top:4px;right:3px;width:9px;height:9px;border-radius:50%;background:#d11f3a;border:1.5px solid #fff}
+.body{flex:1;overflow-y:auto;padding:0 .8rem 1rem;background:#fff}
+.nav{flex:none;display:flex;border-top:1px solid #eee;background:#fff;padding:.35rem .2rem calc(.5rem + env(safe-area-inset-bottom,0px))}
+.nav button{flex:1;background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:1px;font-size:.66rem;color:var(--gris);padding:.2rem 0;min-height:44px}
+.nav svg{width:21px;height:21px}
+.nav .on{color:var(--vino);font-weight:700}
+.banner{border-radius:14px;padding:1rem;color:#fff;display:flex;justify-content:space-between;align-items:center;min-height:118px;overflow:hidden;margin-bottom:.8rem}
+.banner h2{margin:0 0 .2rem;font:600 1.15rem/1.15 var(--serif)}
+.banner p{margin:0 0 .6rem;font-size:.82rem;max-width:150px}
+.banner svg{height:100px;width:auto;flex:none}
+.b1{--g:linear-gradient(110deg,#2b1d12,#6b4a1e)}
+.b2{--g:linear-gradient(110deg,#17120f,#3a2b22)}
+.b3{--g:linear-gradient(110deg,#8F3A52,#D58B96)}.banner,.tile{background:var(--bg,linear-gradient(transparent,transparent)),var(--g);background-size:cover;background-position:center}.hasimg svg{display:none}
+.btn{background:var(--vino);color:#fff;border:0;border-radius:99px;padding:.45rem .9rem;font-weight:600;font-size:.8rem;min-height:36px}
+.btn.lg{width:100%;border-radius:10px;padding:.8rem;font-size:.95rem;min-height:46px}
+.btn.o{background:#fff;color:var(--vino);border:1.5px solid var(--vino)}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:.9rem}
+.tile{border:0;border-radius:12px;height:94px;display:flex;align-items:flex-end;justify-content:space-between;padding:.6rem .7rem;color:#fff;font:600 1.05rem var(--serif);text-align:left}
+.tile.h{--g:linear-gradient(160deg,#6d5236,#2a2018)}.tile.m{--g:linear-gradient(160deg,#e9a7ab,#b95d6c)}
+.sec{display:flex;justify-content:space-between;align-items:center;margin:.3rem 0 .5rem}
+.sec h3{margin:0;font-size:.98rem}
+.link{background:none;border:0;color:var(--vino);font-weight:600;font-size:.78rem;padding:.3rem 0;min-height:32px}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin-bottom:.8rem}
+.mini button{background:#fff;border:1px solid #eee;border-radius:10px;padding:0 0 .4rem;text-align:left;font-size:.72rem;font-weight:600;overflow:hidden}
+.mini .im{height:72px}.mini span{display:block;padding:.3rem .4rem 0;line-height:1.2}.mini small{display:block;padding:0 .4rem;color:var(--gris);font-weight:400}
+.im{background:var(--crema2);display:grid;place-items:center;position:relative;overflow:hidden}.im svg{height:86%;width:auto}.im img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:6px;mix-blend-mode:multiply}
+.chips{display:flex;gap:.4rem;overflow-x:auto;margin-bottom:.7rem;padding-bottom:2px}
+.chip{flex:none;border:1px solid #ddd;background:#fff;border-radius:99px;padding:.3rem .8rem;font-size:.78rem;font-weight:500;min-height:34px}
+.chip[aria-pressed="true"]{background:var(--vino);color:#fff;border-color:var(--vino)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.card{background:#fff;border:1px solid #eee;border-radius:12px;overflow:hidden;position:relative;text-align:left;padding:0}
+.card .im{height:104px;width:100%}
+.card .in{padding:.45rem .55rem .6rem;display:block;font-size:.78rem}
+.card b{display:block;font-weight:600;line-height:1.2}
+.pr{font-weight:700;margin-top:2px;display:block}.old{color:var(--gris);text-decoration:line-through;font-weight:400;font-size:.72rem;margin-right:.3rem}
+.st{color:var(--oro);font-size:.72rem;letter-spacing:1px}.st i{color:var(--gris);font-style:normal;letter-spacing:0}
+.fav{position:absolute;z-index:3;top:5px;right:5px;background:rgba(255,255,255,.85);border:0;border-radius:50%;width:30px;height:30px;display:grid;place-items:center;color:var(--vino)}
+.fav svg{width:16px;height:16px}
+.off{position:absolute;top:6px;left:6px;background:#c8142f;color:#fff;font-weight:700;font-size:.72rem;padding:.1rem .45rem;border-radius:6px;z-index:2}
+.row{display:flex;align-items:center;gap:.65rem;padding:.6rem 0;border-bottom:1px solid #eee;width:100%;background:none;border-left:0;border-right:0;border-top:0;text-align:left}
+.row .im{width:54px;height:54px;border-radius:8px;flex:none}
+.row .tx{flex:1;font-size:.82rem;min-width:0}.row .tx b{display:block;font-weight:600}
+.rank{width:22px;height:22px;border-radius:50%;background:var(--oro);color:#fff;font-weight:700;font-size:.75rem;display:grid;place-items:center;flex:none}
+.qty{display:flex;align-items:center;gap:.5rem;font-weight:600}.qty button{width:28px;height:28px;border:1px solid #ccc;background:#fff;border-radius:6px;line-height:1}
+.sum{background:var(--crema);border-radius:12px;padding:.8rem;margin:.8rem 0}
+.sum div{display:flex;justify-content:space-between;font-size:.85rem;padding:.15rem 0}.sum .t{font-weight:700;font-size:1rem;border-top:1px solid #e3d5ba;margin-top:.3rem;padding-top:.5rem}
+.empty{border:1.5px dashed var(--oro);border-radius:12px;padding:1.4rem 1rem;text-align:center;color:var(--gris);margin:.5rem 0}
+.empty .btn{margin-top:.6rem}
+.me{display:flex;align-items:center;gap:.8rem;padding:.5rem 0 1rem}.av{width:60px;height:60px;border-radius:50%;background:#ddd;display:grid;place-items:center;color:#fff}
+.av svg{width:34px;height:34px}
+.menu{list-style:none;margin:0;padding:0;border:1px solid #eee;border-radius:12px}
+.menu button{display:flex;align-items:center;gap:.7rem;width:100%;background:none;border:0;border-bottom:1px solid #f0f0f0;padding:.8rem .8rem;text-align:left;font-size:.88rem;min-height:46px}
+.menu li:last-child button{border:0}.menu svg{width:19px;height:19px;color:var(--vino)}.menu .sp{flex:1}.menu .ch{width:16px;height:16px;color:#999}
+.badge{background:var(--vino);color:#fff;border-radius:99px;min-width:20px;height:20px;display:inline-grid;place-items:center;font-size:.72rem;font-weight:700}
+.srch{display:flex;align-items:center;gap:.5rem;border:1.5px solid var(--oro);border-radius:12px;padding:.5rem .7rem;margin-bottom:.8rem}
+.srch input{border:0;outline:0;flex:1;font:inherit;min-width:0;background:transparent}
+.noti{background:var(--crema);border-radius:12px;padding:.7rem .8rem;margin-bottom:.6rem;font-size:.85rem}.noti b{display:block}
+.veil{position:absolute;inset:0;background:rgba(20,10,10,.5);z-index:40;display:none}.veil.on{display:block}
+.drawer{position:absolute;top:0;bottom:0;left:0;width:78%;background:#fff;z-index:41;transform:translateX(-102%);transition:transform .22s;padding:3rem .8rem 1rem;visibility:hidden}
+.drawer.on{transform:none;visibility:visible}
+.sheet{position:absolute;left:0;right:0;bottom:0;background:#fff;z-index:45;border-radius:22px 22px 0 0;padding:1rem 1rem 1.4rem;transform:translateY(105%);transition:transform .22s;visibility:hidden;box-shadow:0 -10px 30px rgba(0,0,0,.2);max-height:88%;overflow:auto}
+.sheet.on{transform:none;visibility:visible}
+.sheet h3{font:600 1.2rem var(--serif);margin:.2rem 0}
+.sheet .im{height:130px;border-radius:12px;margin-bottom:.6rem}
+.sheet label{display:block;font-weight:600;font-size:.82rem;margin-top:.6rem}
+.sheet input{width:100%;font:inherit;padding:.6rem;border:1.5px solid #cbbfa8;border-radius:8px;margin-top:.2rem}
+.err{color:#a11226;font-size:.78rem;min-height:1em;margin:.15rem 0 0}
+.toast{position:absolute;left:50%;bottom:76px;transform:translateX(-50%);background:var(--carbon);color:#fff;padding:.5rem .9rem;border-radius:99px;font-size:.8rem;z-index:60;display:none;white-space:nowrap;max-width:92%;overflow:hidden;text-overflow:ellipsis}.toast.on{display:block}
+.foot{text-align:center;font:italic 600 1.2rem var(--serif);color:#6b4d16;padding:0 1rem 2rem}.foot small{display:block;font:400 .85rem var(--sans);font-style:normal;color:var(--carbon)}
+@media (max-width:560px){
+  body{background:#fff}.top,.tabs,.foot{display:none}.stage{padding:0}
+  .phone{width:100%;height:100vh;height:100dvh;border-radius:0;padding:0;box-shadow:none;background:#fff}
+  .screen{border-radius:0}.notch,.status{display:none}.hdr{padding-top:calc(.6rem + env(safe-area-inset-top,0px))}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="top"><h1>Sello Andino</h1><p>PERFUMES QUE HABLAN POR TI</p></div>
+<nav class="tabs" id="tabs" aria-label="Pantallas de la app"></nav>
+<main class="stage">
+  <div class="phone" aria-label="Aplicación Sello Andino">
+    <div class="notch" aria-hidden="true"></div>
+    <div class="screen" id="screen"></div>
+  </div>
+</main>
+<div class="foot">Sello Andino<small>Tu tienda de perfumes en un solo lugar</small></div>
+
+<script>
+/* ===== EDITA ESTO ===== */
+const WHATSAPP = "573214053372"; // número de WhatsApp con indicativo, sin + ni espacios
+// cat: caballero | dama. sub: tipo de aroma. oferta: % de descuento (0 si no tiene). rank: puesto en Tendencia.
+// Para foto real agrega img:"images/archivo.jpg"
+const P = [
+ {id:"bleu",img:"images/bleu-de-chanel.jpg",n:"Bleu de Chanel",cat:"caballero",sub:"Amaderada",pr:220000,r:124,sh:"rect",c:"#1b2338",of:30},
+ {id:"sauvage",img:"images/dior-sauvage.jpg",n:"Dior Sauvage",cat:"caballero",sub:"Aromática",pr:195000,r:98,sh:"rect",c:"#1f3250",rank:2},
+ {id:"eros",img:"images/versace-eros.jpg",n:"Versace Eros",cat:"caballero",sub:"Fougère",pr:180000,r:76,sh:"round",c:"#1c7f93",of:20},
+ {id:"badboy",img:"images/bad-boy.jpg",n:"Carolina Herrera Bad Boy",cat:"caballero",sub:"Amaderada",pr:200000,r:65,sh:"tall",c:"#16110f"},
+ {id:"million",img:"images/1-million.jpg",n:"Paco Rabanne 1 Million",cat:"caballero",sub:"Amaderada",pr:180000,r:99,sh:"rect",c:"#c9a24a",rank:4},
+ {id:"goodgirl",img:"images/good-girl.jpg",n:"Good Girl",cat:"dama",sub:"Oriental",pr:210000,r:142,sh:"tall",c:"#1a2442",of:25},
+ {id:"missdior",img:"images/miss-dior.jpg",n:"Miss Dior",cat:"dama",sub:"Floral",pr:190000,r:98,sh:"round",c:"#e79bb0"},
+ {id:"chance",img:"images/chanel-chance.jpg",n:"Chanel Chance",cat:"dama",sub:"Floral",pr:175000,r:97,sh:"round",c:"#ec9aa6",of:15},
+ {id:"lavie",img:"images/la-vie-est-belle.jpg",n:"La Vie Est Belle",cat:"dama",sub:"Frutal",pr:185000,r:113,sh:"tall",c:"#e8b4c0"},
+ {id:"libre",img:"images/ysl-libre.jpg",n:"YSL Libre",cat:"dama",sub:"Floral",pr:195000,r:156,sh:"rect",c:"#d4a95a",rank:1},
+ {id:"coco",img:"images/coco-mademoiselle.jpg",n:"Chanel Coco Mademoiselle",cat:"dama",sub:"Oriental",pr:185000,r:104,sh:"rect",c:"#d98a86",rank:3}
+];
+/* ======================= */
+
+const IC={
+ menu:'M4 7h16M4 12h16M4 17h16',back:'M15 5l-7 7 7 7',search:'M11 5a6 6 0 100 12 6 6 0 000-12zM20 20l-4.2-4.2',
+ user:'M12 12a4 4 0 100-8 4 4 0 000 8zM4 20c0-4 4-6 8-6s8 2 8 6',bell:'M6 16v-5a6 6 0 1112 0v5l1.5 2h-15zM10 21h4',
+ cart:'M3 4h3l2.5 11h10L21 8H7M10 20h.01M17 20h.01',tag:'M3 12V4h8l10 10-8 8zM7.5 8h.01',home:'M3 11l9-8 9 8M5 10v10h14V10',
+ heart:'M12 20s-8-5-8-11a4.5 4.5 0 018-2.7A4.5 4.5 0 0120 9c0 6-8 11-8 11z',trash:'M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13',
+ chev:'M9 6l6 6-6 6',dots:'M12 5h.01M12 12h.01M12 19h.01',flame:'M12 3c1 4 5 5 5 10a5 5 0 01-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 1-9z',
+ gear:'M12 9a3 3 0 100 6 3 3 0 000-6zM12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1',
+ box:'M6 4h12v17H6zM9 4V2h6v2M9 10h6M9 14h6',pin:'M12 21s-6-6-6-11a6 6 0 1112 0c0 5-6 11-6 11zM12 8a2 2 0 100 4 2 2 0 000-4z',
+ card:'M3 6h18v12H3zM3 10h18',help:'M12 3a9 9 0 100 18 9 9 0 000-18zM9.5 9.5a2.5 2.5 0 114 2c-1 .6-1.5 1-1.5 2M12 17h.01',
+ bottle:'M10 3h4v3h-4zM8 6h8v15H8z'
+};
+const ico=(n,f)=>`<svg viewBox="0 0 24 24" fill="${f?'currentColor':'none'}" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${IC[n]}"/></svg>`;
+const $=s=>document.querySelector(s);
+const money=n=>new Intl.NumberFormat("es-CO",{style:"currency",currency:"COP",maximumFractionDigits:0}).format(n);
+const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const eff=p=>p.of?Math.round(p.pr*(1-p.of/100)):p.pr;
+const get=id=>P.find(p=>p.id===id);
+const wa=t=>"https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(t);
+
+function bottle(sh,c){
+ const cap='<rect x="22" y="3" width="16" height="9" fill="#B8893A"/><rect x="26" y="12" width="8" height="6" fill="#1E1A19"/>';
+ const lab='<rect x="17" y="34" width="26" height="20" fill="none" stroke="#F8EFE0" stroke-width="1" opacity=".8"/>';
+ const b={rect:`<rect x="10" y="18" width="40" height="58" rx="3" fill="${c}"/>`+lab,
+  round:`<circle cx="30" cy="50" r="26" fill="${c}"/><circle cx="22" cy="40" r="6" fill="#fff" opacity=".25"/>`,
+  tall:`<rect x="18" y="18" width="24" height="58" rx="7" fill="${c}"/><rect x="22" y="32" width="16" height="24" fill="none" stroke="#F8EFE0" stroke-width="1" opacity=".8"/>`}[sh];
+ return `<svg viewBox="0 0 60 80" aria-hidden="true">${cap}${b}</svg>`;
+}
+const img=p=>`<span class="im">${p.img?`<img src="${esc(p.img)}" alt="" onerror="this.hidden=true;this.nextElementSibling.style.display='block'">`+bottle(p.sh,p.c).replace("<svg",'<svg style="display:none"'):bottle(p.sh,p.c)}</span>`;
+const stars=p=>`<span class="st">★★★★★ <i>(${p.r})</i></span>`;
+const price=p=>p.of?`<span class="pr"><span class="old">${money(p.pr)}</span>${money(eff(p))}</span>`:`<span class="pr">${money(p.pr)}</span>`;
+
+let S={f:{},pending:"",screen:"inicio",hist:[],cart:{},favs:["bleu","goodgirl","libre","chance"],chip:{caballero:"Todos",dama:"Todos",ofertas:"Todos"},noti:"Todas",q:""};
+try{const sv=JSON.parse(localStorage.getItem("sa-app")||"null");if(sv){S.cart=sv.cart||{};S.favs=sv.favs||S.favs}}catch(e){}
+const save=()=>{try{localStorage.setItem("sa-app",JSON.stringify({cart:S.cart,favs:S.favs}))}catch(e){}};
+const units=()=>Object.values(S.cart).reduce((a,b)=>a+b,0);
+const total=()=>Object.entries(S.cart).reduce((s,[id,q])=>s+(get(id)?eff(get(id))*q:0),0);
+
+const TITLES={inicio:"1. Inicio",caballero:"2. Caballero",dama:"3. Dama",tendencia:"4. Tendencia",coleccion:"5. Tu colección",ofertas:"6. Ofertas",carrito:"7. Carrito",cuenta:"8. Mi cuenta",busqueda:"Búsqueda",notificaciones:"Notificaciones"};
+function tabs(){
+ $("#tabs").innerHTML=Object.entries(TITLES).map(([k,v],i)=>`<button class="tab ${i>7?"x":""}" data-go="${k}" ${S.screen===k?'aria-current="page"':""}>${v}</button>`).join("");
+}
+const card=p=>`<div class="card">${p.of?`<span class="off">${p.of}%</span>`:""}<button class="fav" data-fav="${p.id}" aria-label="${S.favs.includes(p.id)?"Quitar de":"Guardar en"} Tu colección: ${esc(p.n)}" aria-pressed="${S.favs.includes(p.id)}">${ico("heart",S.favs.includes(p.id))}</button>
+ <button class="cbtn" style="border:0;width:100%;background:none;padding:0;text-align:left;display:block" data-open="${p.id}" aria-label="${esc(p.n)}, ${money(eff(p))}. Ver detalle">${img(p)}<span class="in"><b>${esc(p.n)}</b>${price(p)}${stars(p)}</span></button></div>`;
+const rowItem=(p,extra)=>`<button class="row" data-open="${p.id}">${extra||""}${img(p)}<span class="tx"><b>${esc(p.n)}</b>${price(p)}</span><span style="color:#999">${ico("chev").replace("<svg",'<svg width="16" height="16"')}</span></button>`;
+const banner=(cls,h,t,btn,go,p,bg)=>`<div class="banner ${cls}" data-bg="images/${bg}.jpg"><div><h2>${h}</h2><p>${t}</p>${btn?`<button class="btn" data-go="${go}">${btn} →</button>`:""}</div>${bottle(p.sh,p.c)}</div>`;
+const chipsRow=(key,list)=>`<div class="chips" role="group" aria-label="Filtrar">${list.map(c=>`<button class="chip" data-chip="${key}|${c}" aria-pressed="${S.chip[key]===c}">${c}</button>`).join("")}</div>`;
+const emptyBox=(t,b,go)=>`<div class="empty"><p style="margin:0">${t}</p>${b?`<button class="btn" data-go="${go}">${b}</button>`:""}</div>`;
+
+const V={
+ inicio(){const t=P.filter(p=>p.rank).sort((a,b)=>a.rank-b.rank).slice(0,3);
+  return banner("b1","Oferta del mes","Fragancias que marcan la diferencia","Ver oferta","ofertas",get("sauvage"),"fondo-oferta-del-mes")+
+  `<div class="tiles"><button class="tile h" data-go="caballero" data-bg="images/fondo-caballero.jpg">Caballero <span>→</span></button><button class="tile m" data-go="dama" data-bg="images/fondo-dama.jpg">Dama <span>→</span></button></div>
+  <div class="sec"><h3>Tendencia</h3><button class="link" data-go="tendencia">Ver todo →</button></div>
+  <div class="mini">${t.map(p=>`<button data-open="${p.id}">${img(p)}<span>${esc(p.n)}</span><small>${p.cat==="dama"?"Dama":"Caballero"}</small></button>`).join("")}</div>
+  <div class="sec"><h3>Tu colección</h3><button class="link" data-go="coleccion">Ver todo →</button></div>
+  ${S.favs.length?`<div class="mini">${S.favs.slice(0,3).map(id=>{const p=get(id);return p?`<button data-open="${p.id}">${img(p)}<span>${esc(p.n)}</span></button>`:""}).join("")}</div>`:emptyBox("Aún no guardas perfumes. Toca el corazón en cualquier perfume.")}`},
+ caballero(){const l=["Todos","Aromática","Amaderada","Fougère"],c=S.chip.caballero;
+  const items=P.filter(p=>p.cat==="caballero"&&(c==="Todos"||p.sub===c));
+  return banner("b2","Fragancias para él","Fuerza, carácter, estilo","","",get("badboy"),"banner-caballero")+chipsRow("caballero",l)+(items.length?`<div class="grid">${items.map(card).join("")}</div>`:emptyBox("No hay perfumes de ese tipo por ahora."))},
+ dama(){const l=["Todos","Floral","Frutal","Oriental"],c=S.chip.dama;
+  const items=P.filter(p=>p.cat==="dama"&&(c==="Todos"||p.sub===c));
+  return banner("b3","Fragancias para ella","Feminidad en cada nota","","",get("missdior"),"banner-dama")+chipsRow("dama",l)+(items.length?`<div class="grid">${items.map(card).join("")}</div>`:emptyBox("No hay perfumes de ese tipo por ahora."))},
+ tendencia(){return banner("b2","Los más deseados","Los perfumes que todos están eligiendo","","",get("sauvage"),"banner-tendencia")+
+  P.filter(p=>p.rank).sort((a,b)=>a.rank-b.rank).map(p=>rowItem(p,`<span class="rank">${p.rank}</span>`)).join("")},
+ coleccion(){const it=S.favs.map(get).filter(Boolean);
+  return `<h3 style="margin:.2rem 0 0">Tus perfumes favoritos</h3><p style="margin:0 0 .5rem;color:var(--gris);font-size:.82rem">Guardados para tenerlos siempre a mano.</p>`+
+  (it.length?it.map(p=>`<div class="row"><button style="display:flex;gap:.65rem;flex:1;background:none;border:0;text-align:left;padding:0;align-items:center;min-width:0" data-open="${p.id}">${img(p)}<span class="tx"><b>${esc(p.n)}</b>${price(p)}</span></button><button class="ic" data-fav="${p.id}" style="color:var(--vino)" aria-label="Quitar ${esc(p.n)} de Tu colección">${ico("heart",1)}</button></div>`).join(""):emptyBox("Tu colección está vacía. Guarda perfumes con el corazón.","Ver Caballero","caballero"))},
+ ofertas(){const l=["Todos","Caballero","Dama","Unisex"],c=S.chip.ofertas;
+  const it=P.filter(p=>p.of&&(c==="Todos"||(c==="Caballero"&&p.cat==="caballero")||(c==="Dama"&&p.cat==="dama")));
+  return banner("b2","Descuentos especiales","No dejes pasar estas ofertas","","",get("eros"),"banner-ofertas")+chipsRow("ofertas",l)+(it.length?`<div class="grid">${it.map(card).join("")}</div>`:emptyBox("No hay ofertas en esta categoría por ahora."))},
+ carrito(){const ids=Object.keys(S.cart).filter(get);
+  if(!ids.length)return `<h3 style="margin:.2rem 0">Carrito</h3>`+emptyBox("Tu carrito está vacío. Elige un perfume para empezar.","Ir a la tienda","inicio");
+  return ids.map(id=>{const p=get(id);return `<div class="row">${img(p)}<span class="tx"><b>${esc(p.n)}</b>${price(p)}<span class="qty"><button data-menos="${id}" aria-label="Quitar una unidad">−</button><span aria-label="Cantidad">${S.cart[id]}</span><button data-mas="${id}" aria-label="Agregar una unidad">+</button></span></span><button class="ic" data-del="${id}" aria-label="Eliminar ${esc(p.n)}">${ico("trash")}</button></div>`}).join("")+
+  `<div class="sum"><b style="display:block;margin-bottom:.3rem">Resumen de compra</b><div><span>Subtotal</span><span>${money(total())}</span></div><div><span>Envío a Pasto</span><span>Se confirma por WhatsApp</span></div><div class="t"><span>Total</span><span>${money(total())}</span></div></div>
+  <button class="btn lg" data-checkout="1">Finalizar compra →</button>`},
+ cuenta(){const it=[["box","Mis pedidos","x"],["pin","Direcciones de envío","x"],["card","Métodos de pago","x"],["bell","Notificaciones","notificaciones"],["heart","Favoritos","coleccion"],["help","Soporte","wa"]];
+  return `<div class="me"><span class="av" style="background:#bbb">${ico("user")}</span><div><b>Juan Pérez</b><br><span style="color:var(--gris);font-size:.82rem">juanperez@gmail.com</span></div></div>
+  <ul class="menu">${it.map(([i,t,a])=>`<li><button data-m="${a}">${ico(i)}<span class="sp">${t}</span>${t==="Notificaciones"?'<span class="badge">2</span>':""}${ico("chev").replace("<svg",'<svg class="ch"')}</button></li>`).join("")}</ul>
+  <button class="btn lg o" style="margin-top:1rem" data-m="out">Cerrar sesión</button>`},
+ busqueda(){const q=S.q.trim().toLowerCase();const r=q?P.filter(p=>(p.n+" "+p.sub+" "+p.cat).toLowerCase().includes(q)):[];
+  return `<label class="srch">${ico("search")}<input id="q" type="search" placeholder="Buscar perfumes…" value="${esc(S.q)}" aria-label="Buscar perfumes" autocomplete="off"></label>`+
+  (q?(r.length?r.map(p=>rowItem(p)).join(""):emptyBox("No encontramos “"+esc(S.q)+"”. Prueba con otra marca o con Caballero o Dama.")):`<p style="color:var(--gris);font-size:.85rem">Encuentra fácilmente tu perfume favorito. Escribe una marca o un nombre.</p>`)},
+ notificaciones(){const all=[["Oferta especial","Hasta 30% de descuento en perfumes seleccionados.",1],["Los más deseados","YSL Libre lidera la tendencia esta semana.",1],["Tu pedido","Al enviar tu pedido por WhatsApp, allí te confirmamos el estado y la entrega.",0]];
+  const l=all.filter(n=>S.noti==="Todas"||n[2]);
+  return `<div class="chips">${["Todas","Promociones"].map(t=>`<button class="chip" data-noti="${t}" aria-pressed="${S.noti===t}">${t}</button>`).join("")}</div>`+l.map(n=>`<div class="noti"><b>${n[0]}</b>${n[1]}</div>`).join("")}
+};
+const MAIN=["inicio","caballero","dama","tendencia","coleccion","ofertas","carrito","cuenta"];
+function nav(){
+ const ctx={caballero:["heart","Caballero"],dama:["flame","Dama"],tendencia:["flame","Tendencia"]}[S.screen];
+ const it=[["cuenta","user","Mi cuenta"],["ofertas","tag","Ofertas"],...(ctx?[[S.screen,ctx[0],ctx[1]]]:[]),["carrito","cart","Carrito"],["inicio","home","Tienda"]];
+ const act=S.screen==="coleccion"||S.screen==="busqueda"||S.screen==="notificaciones"?"":S.screen;
+ return `<div class="nav" role="navigation" aria-label="Navegación principal">${it.map(([g,i,t])=>`<button data-go="${g}" class="${act===g?"on":""}" ${act===g?'aria-current="page"':""}>${ico(i,act===g&&i==="heart")}${t}${g==="carrito"&&units()?` <span class="badge" style="min-width:16px;height:16px;font-size:.62rem">${units()}</span>`:""}</button>`).join("")}</div>`;
+}
+const logo='<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#B8893A" stroke-width="1.8" aria-hidden="true"><path d="M10 3h4v3h-4zM8 6h8v15H8z"/></svg>';
+function render(){
+ const home=S.screen==="inicio";
+ const title=home?"Sello Andino":({caballero:"Caballero",dama:"Dama",tendencia:"Tendencia",coleccion:"Tu colección",ofertas:"Ofertas",carrito:"Carrito",cuenta:"Mi cuenta",busqueda:"Búsqueda",notificaciones:"Notificaciones"})[S.screen];
+ $("#screen").innerHTML=`<div class="status" aria-hidden="true"><span>9:41</span><span>●●● ▮</span></div>
+ <header class="hdr">${home?`<button class="ic" data-menu="1" aria-label="Abrir menú">${ico("menu")}</button>`:`<button class="ic" data-back="1" aria-label="Volver">${ico("back")}</button>`}
+  <div class="t">${logo}<span>${title}</span></div>
+  <button class="ic" data-go="busqueda" aria-label="Buscar">${ico("search")}</button><button class="ic" data-go="cuenta" aria-label="Mi cuenta">${ico("user")}</button><button class="ic" data-go="notificaciones" aria-label="Notificaciones">${ico("bell")}<span class="dot"></span></button></header>
+ <div class="body" id="body">${V[S.screen]()}</div>${nav()}
+ <div class="veil" id="veil"></div>
+ <aside class="drawer" id="drawer" aria-label="Menú lateral"><h3 style="font:600 1.2rem var(--serif);margin:0 0 .8rem">Sello Andino</h3><ul class="menu" style="border:0">${[["home","Inicio","inicio"],["user","Caballero","caballero"],["heart","Dama","dama"],["flame","Tendencia","tendencia"],["tag","Ofertas","ofertas"],["heart","Tu colección","coleccion"]].map(([i,t,g])=>`<li><button data-go="${g}">${ico(i)}${t}</button></li>`).join("")}</ul></aside>
+ <div class="sheet" id="sheet" role="dialog" aria-modal="true"></div><div class="toast" id="toast" role="status"></div>`;
+ tabs();bgs();
+ if(S.screen==="busqueda"){const q=$("#q");q.focus();q.setSelectionRange(q.value.length,q.value.length)}
+}
+function bgs(){document.querySelectorAll("[data-bg]").forEach(el=>{const i=new Image(),t=el.classList.contains("tile");
+ i.onload=()=>{el.style.setProperty("--bg",`linear-gradient(${t?"0deg,rgba(0,0,0,.55),rgba(0,0,0,0) 65%":"90deg,rgba(0,0,0,.55),rgba(0,0,0,.05) 75%"}),url('${el.dataset.bg}')`);el.classList.add("hasimg")};i.src=el.dataset.bg})}
+function go(s,back){ if(!back&&s!==S.screen)S.hist.push(S.screen); S.screen=s; render(); const b=$("#body"); if(b)b.scrollTop=0; }
+function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove("on"),2000)}
+function sheet(html){const s=$("#sheet");s.innerHTML=html;s.classList.add("on");$("#veil").classList.add("on");const f=s.querySelector("input,button");f&&f.focus()}
+function closeAll(){["sheet","drawer"].forEach(i=>$("#"+i).classList.remove("on"));$("#veil").classList.remove("on")}
+function detail(id){const p=get(id);
+ sheet(`<div class="im" style="height:130px;border-radius:12px;margin-bottom:.6rem">${img(p).replace(/^<span class="im">|<\/span>$/g,"")}</div><h3>${esc(p.n)}</h3><p style="margin:0;color:var(--gris);font-size:.85rem">${p.cat==="dama"?"Dama":"Caballero"}, ${p.sub}</p><p style="margin:.4rem 0">${price(p)} ${stars(p)}</p>
+ <button class="btn lg" data-add="${id}">Agregar al carrito</button><button class="btn lg o" style="margin-top:.5rem" data-close="1">Seguir mirando</button>`)}
+function confirmar(){
+ const u=units(),txt=u===1?"1 perfume":u+" perfumes";
+ const L=Object.entries(S.cart).filter(([id])=>get(id)).map(([id,q])=>`<li>${q} x ${esc(get(id).n)}</li>`).join("");
+ sheet(`<h3>Confirma tu pedido</h3><p style="margin:.2rem 0 .4rem;font-size:.92rem">Vas a pedir <b>${txt}</b> por un total de <b>${money(total())}</b>.</p>
+ <ul style="margin:0 0 .6rem;padding-left:1.1rem;font-size:.88rem">${L}</ul>
+ <div class="noti" style="margin:0 0 .6rem"><b>Entrega a domicilio en Pasto</b>${esc(S.f.n)}<br>${esc(S.f.d)}${S.f.b?", "+esc(S.f.b):""}</div>
+ <p class="hint" style="margin:0 0 .7rem;font-size:.8rem;color:var(--gris)">Al confirmar se abrirá WhatsApp con tu pedido. La compra queda lista cuando te confirmemos disponibilidad, pago y entrega.</p>
+ <button class="btn lg" data-send="1">Sí, confirmar y enviar</button><button class="btn lg o" style="margin-top:.5rem" data-checkout="1">Corregir datos</button>`);
+}
+function checkout(){
+ sheet(`<h3>Finalizar compra</h3><p style="margin:0;color:var(--gris);font-size:.85rem">Te llevamos el pedido a domicilio en Pasto. Lo confirmamos por WhatsApp.</p>
+ <form id="cf" novalidate><label for="cn">Nombre</label><input id="cn" autocomplete="name" value="${esc(S.f.n||"")}"><p class="err" id="en"></p>
+ <label for="cb">Barrio</label><input id="cb" value="${esc(S.f.b||"")}"><label for="cd">Dirección de entrega</label><input id="cd" autocomplete="street-address" value="${esc(S.f.d||"")}"><p class="err" id="ed"></p>
+ <button class="btn lg" type="submit" style="margin-top:.4rem">Enviar pedido por WhatsApp</button></form>`)}
+
+document.addEventListener("click",e=>{
+ const t=e.target.closest("button");if(!t)return;const d=t.dataset;
+ if(d.go){closeAll();go(d.go)}
+ else if(d.back){go(S.hist.pop()||"inicio",true)}
+ else if(d.menu){$("#drawer").classList.add("on");$("#veil").classList.add("on")}
+ else if(d.open)detail(d.open);
+ else if(d.add){S.cart[d.add]=(S.cart[d.add]||0)+1;save();closeAll();render();toast(get(d.add).n+" agregado al carrito")}
+ else if(d.fav){const i=S.favs.indexOf(d.fav);i>=0?S.favs.splice(i,1):S.favs.push(d.fav);save();const sc=$("#body").scrollTop;render();$("#body").scrollTop=sc;toast(i>=0?"Quitado de Tu colección":"Guardado en Tu colección")}
+ else if(d.chip){const[k,v]=d.chip.split("|");S.chip[k]=v;const sc=$("#body").scrollTop;render();$("#body").scrollTop=sc}
+ else if(d.noti){S.noti=d.noti;render()}
+ else if(d.mas){S.cart[d.mas]++;save();render()}
+ else if(d.menos){S.cart[d.menos]--;if(S.cart[d.menos]<=0)delete S.cart[d.menos];save();render()}
+ else if(d.del){delete S.cart[d.del];save();render()}
+ else if(d.send){window.open(wa(S.pending),"_blank","noopener");closeAll();toast("Pedido enviado a WhatsApp")}
+ else if(d.checkout)checkout();
+ else if(d.close)closeAll();
+ else if(d.m){if(d.m==="wa")window.open(wa("Hola, necesito ayuda con Sello Andino."),"_blank","noopener");else if(d.m==="x"||d.m==="out")toast("Esta opción aún no está en el prototipo");else go(d.m)}
+});
+document.addEventListener("click",e=>{if(e.target.id==="veil")closeAll()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeAll()});
+document.addEventListener("input",e=>{if(e.target.id==="q"){S.q=e.target.value;$("#body").innerHTML=V.busqueda();const q=$("#q");q.focus();q.setSelectionRange(q.value.length,q.value.length)}});
+document.addEventListener("submit",e=>{
+ if(e.target.id!=="cf")return;e.preventDefault();
+ const n=$("#cn").value.trim(),d=$("#cd").value.trim();
+ $("#en").textContent=n?"":"Escribe tu nombre para enviar el pedido.";
+ $("#ed").textContent=d?"":"Escribe la dirección donde te lo llevamos.";
+ if(!n){$("#cn").focus();return}if(!d){$("#cd").focus();return}
+ const L=Object.entries(S.cart).filter(([id])=>get(id)).map(([id,q])=>`- ${q} x ${get(id).n}: ${money(eff(get(id))*q)}`);
+ const msg=["Hola, quiero hacer este pedido:",...L,"Total: "+money(total()),"","Nombre: "+n,"Barrio: "+($("#cb").value.trim()||"-"),"Dirección: "+d].join("\n");
+ S.f={n,b:$("#cb").value.trim(),d};S.pending=msg;confirmar();
+});
+render();
+</script>
+</body>
+</html>
